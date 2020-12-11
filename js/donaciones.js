@@ -1,3 +1,7 @@
+//Database
+const database= firebase.database();
+const auth=firebase.auth();
+
 //Barra global
 const RegistroT= document.getElementById('RegistroT');
 const TRegistrados= document.getElementById('TRegistrados');
@@ -8,9 +12,15 @@ const DonacionesRegistrados=document.getElementById('DonacionesRegistrados');
 
 //Atributos
 
-
-//Database
-const database= firebase.database();
+//Verificamos si hay alguien logueado, si no lo mandamos a la pantalla de login
+auth.onAuthStateChanged(
+    (user)=>{
+  
+      if(user===null){
+        window.location.href='login.html';
+      }
+  
+ });
 
 //Cargamos todos los datos de los donaciones de cada categoria
 //Donaciones de Dinero
@@ -25,16 +35,17 @@ const dineroTotalCantidad = document.getElementById('dineroTotalCantidad');
         })
     });
 
+var separarPalabras;
 const ropaCantidad = document.getElementById('ropaCantidad');
-    database.ref("donacionesAceptadas/ropa").on("value",function(data){
+database.ref("donacionesAceptadas/ropa").on("value",function(data){
         dineroCantidadd = 0;
         data.forEach(function(cantidadDatabase){
                     let value = cantidadDatabase.val();
-                    dineroCantidadd = dineroCantidadd + value.cantidad;
+                    separarPalabras = value.inforopa.split(":");
+                    dineroCantidadd = dineroCantidadd + parseInt(separarPalabras[1]);
                     ropaCantidad.innerHTML = dineroCantidadd;
         })
     });
-
 
 
 //Pasa a la pantalla de registro de trabajadores

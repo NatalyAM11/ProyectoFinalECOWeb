@@ -1,3 +1,7 @@
+//Database
+const database= firebase.database();
+const auth=firebase.auth();
+
 //Barra global
 const RegistroT= document.getElementById('RegistroT');
 const TRegistrados= document.getElementById('TRegistrados');
@@ -9,6 +13,7 @@ const DonacionesRegistrados=document.getElementById('DonacionesRegistrados');
 //Atributos del HTML
 const ropaLista = document.getElementById('ropaLista');
 const dineroLista = document.getElementById('dineroLista');
+
 //Botones
 const alimentosBtn = document.getElementById('alimentosBtn');
 const medicamentosBtn = document.getElementById('medicamentosBtn');
@@ -20,9 +25,15 @@ const ropaBtn = document.getElementById('ropaBtn');
 let boton = "Educacion";
 let botonropa;
 
-//const dineroMedicamentos = document.getElementById('dineroMedicamentos');
-//const dineroAlimentos = document.getElementById('dineroMedicamentos');
-//const dineroInfraestructura = document.getElementById('dineroMedicamentos');
+//Verificamos si hay alguien logueado, si no lo mandamos a la pantalla de login
+auth.onAuthStateChanged(
+    (user)=>{
+  
+      if(user===null){
+        window.location.href='login.html';
+      }
+  
+ });
 
 //Comandos de los botones
 alimentosBtn.addEventListener('click', ()=>{
@@ -48,12 +59,6 @@ educacionBtn.addEventListener('click', ()=>{
     BotonesValidar(boton);
     console.log(boton);
 })
-
-
-console.log(boton);
-
-//Database
-const database= firebase.database();
 
 //Cargamos todos los datos de los donaciones de cada categoria
 //Donaciones de Ropa

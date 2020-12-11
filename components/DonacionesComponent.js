@@ -50,6 +50,7 @@ class DonacionesComponent{
                 id: this.donador.id,
                 idusuario: this.donador.idusuario,
                 cantidad: 1,
+                inforopa: this.donador.inforopa,
                 estado: 'recibido'
             }
             );

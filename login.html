@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Pro Fuerza</title>
+</head>
+
+<body>
+    <div id="todo">
+      <img id="mansito" style="width:500px" src="img/Sign Up.jpg">
+   
+      <div id="login">
+           <img style="width:350px" src="img/logo.jpg" id="logo">
+          <h2 id="titulo">Log In</h2>
+          <input id="correo" placeholder="Correo" type="text">
+          <input id="contraseña" placeholder="Contraseña" type="text">
+          <button id=bLogin>Login</button>
+          <img style="width:840px" src="img/ondas.jpg" id="ondas">
+      </div>
+  
+    </div>
+
+  
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyD0rsFT2rnv_g6bVCkxaaxb8b7_hZ93EeI",
+      authDomain: "proyectofinaleco-7540d.firebaseapp.com",
+      databaseURL: "https://proyectofinaleco-7540d-default-rtdb.firebaseio.com",
+      projectId: "proyectofinaleco-7540d",
+      storageBucket: "proyectofinaleco-7540d.appspot.com",
+      messagingSenderId: "57447224352",
+      appId: "1:57447224352:web:a10cce58f28a9e918b5845",
+      measurementId: "G-1RXRD43NWR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+<script src="p5.min.js"></script>
+<script src="p5.js"></script>
+<script src="js/login.js"></script>

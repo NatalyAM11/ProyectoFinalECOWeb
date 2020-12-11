@@ -1,0 +1,65 @@
+#inputsT{
+ display: flex;
+flex-direction: column;
+width: 1040px;
+margin: 0 auto;
+background-color: rgb(85,197,149);
+color: white;
+border-radius: 10px;
+padding-bottom: 250px;   
+
+}
+
+#inputsT *{
+    padding: 10px;
+    margin: 5px;
+    margin-left: 50px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#todo{
+    display: inline-flex;
+}
+
+#titulo1{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-size: xx-large;
+}
+
+#RegistroT{
+    background-color: rgb(85,197,149);
+    color: white;
+    border-radius: 10px;
+}
+
+#barraGlobal{
+    width: 240px;
+    margin-right: 25px;
+    color: rgb(107, 150, 160);
+    color: rgb(8,89,108);
+}
+
+#barraGlobal *{
+    padding: 20px;
+    width: 300px;
+}
+
+#bAgregar{
+    width: 300px;
+    margin-left:250px;
+    margin-top: 20px;
+    background-color: rgb(250,250,250);
+    color: rgb(8,89,108);
+    border-radius: 18px;
+}
+
+#mansito{
+    margin-top:50px;
+    margin-left:600px;
+}
+
+
+
+

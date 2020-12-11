@@ -1,0 +1,49 @@
+#login{
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#login *{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+#ondas{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 150px;
+    padding: 0px;
+}
+
+#bLogin{
+    width: 40%;
+    color: white;
+    background-color: rgb(85,197,149);
+    border-radius: 18px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+#titulo{
+    padding-top: 30px;
+    color: rgb(8,89,108);
+}
+
+#todo{
+    display: inline-flex;
+}
+
+#correo{
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#contraseña{
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+

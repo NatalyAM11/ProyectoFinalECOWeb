@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/solicitudes.css">
+    <title>Pro Fuerza</title>
+</head>
+
+<body>
+
+  <div id="todo">
+ 
+<div id="barraGlobal">
+  <img style="width:200px" src="img/logo.jpg">
+  <h4 id="RegistroT">Registrar trabajadores</h4>
+  <h4 id="Solicitudes">Solicitud de trabajadores</h4>
+  <h4 id="Donaciones">Donaciones realizadas</h4>
+  <h4 id="UsuariosApp">Personas registradas en la app</h4>
+  <h4 id="TRegistrados">Trabajadores registrados</h4>
+  <h4 id="DonacionesRegistrados">Pantalla de visualización</h4>
+  <br>
+  <br>
+  <h4 id="bCerrarSesion">Cerrar sesión</h4>
+</div>
+
+<div id="todasLasSolicitudes">
+  <h2 id="titulo1">Solicitudes de trabajadores</h2>
+  <h4>Solicitudes por aceptar</h4>
+  <div id="SoliEnEspera"></div>
+  <h4>Solicitudes aceptadas</h4>
+  <div id="SoliAceptadas"></div>
+</div>
+
+</div>
+</body>
+
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyD0rsFT2rnv_g6bVCkxaaxb8b7_hZ93EeI",
+      authDomain: "proyectofinaleco-7540d.firebaseapp.com",
+      databaseURL: "https://proyectofinaleco-7540d-default-rtdb.firebaseio.com",
+      projectId: "proyectofinaleco-7540d",
+      storageBucket: "proyectofinaleco-7540d.appspot.com",
+      messagingSenderId: "57447224352",
+      appId: "1:57447224352:web:a10cce58f28a9e918b5845",
+      measurementId: "G-1RXRD43NWR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+<script src="components/SolicitudAceptada.js"></script>
+<script src="components/SolicitudEnEspera.js"></script>
+<script src="js/solicitudes.js"></script>

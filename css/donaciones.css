@@ -1,0 +1,73 @@
+#barraGlobal{
+    width: 240px;
+    margin-right: 25px;
+    color: rgb(8,89,108);
+}
+
+#barraGlobal *{
+    padding: 20px;
+    width: 300px;
+    color: rgb(8,89,108);
+}
+
+#Donaciones{
+    background-color: rgb(85,197,149);
+    color: white;
+    border-radius: 10px;
+}
+
+#donacionesInput{
+    display: flex;
+   flex-direction: column;
+   width: 1040px;
+   margin: 0 auto;
+   background-color: rgb(85,197,149);
+   color: white;
+   border-radius: 10px;
+   padding-bottom: 250px;    
+}
+   
+#donacionesInput *{
+    padding: 10px;
+    margin: 5px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+#todo{
+    display: inline-flex;
+}
+   
+#titulo1{
+    margin-top: 50px;
+}
+
+.listaCantidad{
+    background-color: rgb(23, 206, 160);
+    width: 80%;
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#CajaRopa {
+    background-color: rgb(206, 23, 166);
+    margin-right: 70px;
+}
+
+#listaDinero {
+    background-color: rgb(7, 60, 71);
+    margin-right: 70px;
+}
+
+#titulo2,
+#titulo3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#bCerrarSesion{
+    color: rgb(7, 60, 71);
+}

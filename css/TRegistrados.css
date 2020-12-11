@@ -1,0 +1,74 @@
+#inputsT{
+    display: flex;
+   flex-direction: column;
+   width: 1040px;
+   margin: 0 auto;
+   background-color: rgb(85,197,149);
+   color: white;
+   border-radius: 10px;
+   padding-bottom: 250px;    
+   }
+   
+   #inputsT *{
+       margin-left: 50px;
+   }
+   
+   #todo{
+       display: inline-flex;
+   }
+   
+   #titulo1{
+        color: white;
+       margin-top: 50px;
+       font-size: xx-large;
+   }
+   
+   #TRegistrados{
+       background-color: rgb(85,197,149);
+       color: white;
+       border-radius: 10px;
+   }
+   
+   #barraGlobal{
+       width: 240px;
+       margin-right: 25px;
+       color: rgb(8,89,108);
+       
+   }
+   
+   #barraGlobal *{
+       padding: 20px;
+       width: 300px;
+   }
+
+   
+
+.listaTrabajadores{
+    background-color: rgb(207,244,210);
+    color:rgb(8,89,108);
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 50px;
+}
+
+.listaTrabajadores *{
+
+}
+
+
+#bCerrarSesion{
+    color: rgb(7, 60, 71);
+}
+
+.imagenClass{
+    margin-left:50px;
+  
+}
+
+.infoCont{
+    margin-top: 25px;
+    font-weight: bolder;
+    
+}

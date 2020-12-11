@@ -1,0 +1,105 @@
+#barraGlobal{
+    width: 240px;
+    margin-right: 25px;
+    color: rgb(8,89,108);
+}
+
+#barraGlobal *{
+    padding: 20px;
+    width: 300px;
+    color: rgb(8,89,108);
+}
+
+#Solicitudes{
+    background-color: rgb(85,197,149);
+    color: white;
+    border-radius: 10px;
+}
+
+#todo{
+    display: inline-flex;
+}
+
+.infoCont{
+    font-weight: bolder;
+    padding-bottom: 0px;
+}
+
+.listaSolicitudesAceptadas{
+    width: 80%;
+    margin-bottom: 25px;
+    background-color: rgb(207,244,210);
+    border-radius: 10px;
+    display: inline-flex;
+
+}
+
+.listaSolicitudesEspera{
+    width: 80%;
+    margin-bottom: 25px;
+    background-color: rgb(207,244,210);
+    border-radius: 10px;
+    display: inline-flex;
+
+}
+
+
+#todasLasSolicitudes{
+    
+    flex-direction: column;
+    width: 1040px;
+    margin: 0 auto;
+    background-color: rgb(85,197,149);
+    color:rgb(8,89,108);
+    border-radius: 10px;
+    padding-bottom: 250px; 
+}
+
+#todasLasSolicitudes *{
+    padding: 15px;
+    margin-left: 50px;
+  
+}
+
+#titulo1{
+    color: white;
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+.botonRechazarE{
+    margin-top: 170px;
+    width: 150px;
+    background-color: rgb(100, 218, 167);
+    border-radius: 18px;
+    color: rgb(207,244,210);
+    position: absolute;
+    left: 650px;
+}
+
+.botonAceptarE{
+    margin-top: 170px;
+    width: 150px;
+    background-color: rgb(85,197,149);
+    border-radius: 18px;
+    color: rgb(207,244,210);
+    position: absolute;
+    left: 820px;
+}
+
+.botonTermino{
+    position: absolute;
+    left: 700px;
+    margin-top: 140px;
+    width: 150px;
+    background-color: rgb(85,197,149);
+    border-radius: 18px;
+    color: rgb(207,244,210);
+
+}
+
+
+.imagen{
+    margin-bottom: 30px;
+}
+
